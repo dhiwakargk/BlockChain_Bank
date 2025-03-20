@@ -17,7 +17,7 @@ const FeedbackForm = () => {
   
   const handleSubmit = async(e) => {
     e.preventDefault();
-    let data= await axios.post("https://app-backend-l4ju.onrender.com/feedback",formData).then((res)=>{
+    let data= await axios.post("https://app-backend-fe8t.onrender.com/feedback",formData).then((res)=>{
         console.log(res)
         if(res.data.result=="Data Added Successfuly")
         {
