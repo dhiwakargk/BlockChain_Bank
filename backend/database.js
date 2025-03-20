@@ -1,5 +1,6 @@
 const mongodb=require("mongoose")
-mongodb.connect("mongodb://localhost:27017").then(()=>{
+mongodb.connect("mongodb+srv://dhiwakarcd22:Kfqq2zIpFCFVeiE7@cluster0.w8tyx.mongodb.net/bank_feed_back?retryWrites=true&w=majority&appName=Cluster0
+").then(()=>{
     console.log("Data base connected successfully")
 }).catch(()=>{
     console.log("Data Base not connected")
