@@ -1,0 +1,157 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_beneficiary_name",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_account_number",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_confirm_number",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_bank",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_IFSC",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_transfer",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_mobile",
+				"type": "string"
+			}
+		],
+		"name": "Add_user_Accounts",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "add_accounts",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "beneficiary_name",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "account_number",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "confirm_account_number",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "bank_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "IFSC",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "transfer_type",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "mobile",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "Status",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "View_Accounts",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "beneficiary_name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "account_number",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "confirm_account_number",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "bank_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "IFSC",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "transfer_type",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mobile",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Add_Beneficiary_Account.Add_Accounts[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
