@@ -13,7 +13,7 @@ app.get("/",(req,res)=>{
 
 app.post("/feedback",async(req,res)=>{
     console.log(req.body)
-    const add_feedback=DB.Create_Feed_back(req.body.name,req.body.email,req.body.phoneNumber,req.body.feedbackType,req.body.feedbackDescription,req.body.rating)
+    const add_feedback=await DB.Create_Feed_back(req.body.name,req.body.email,req.body.phoneNumber,req.body.feedbackType,req.body.feedbackDescription,req.body.rating)
     
     res.json({"result":"Data Added Successfuly"})
 
