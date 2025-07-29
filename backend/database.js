@@ -1,10 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://dhiwakarcd22:IVZHaZltOfhYjYoi@cluster0.w8tyx.mongodb.net/bank_feed_back?retryWrites=true&w=majority&appName=Cluster0", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-.then(() => console.log("Database connected successfully"))
-.catch(err => console.error("Database connection failed:", err));  
+mongoose.connect("mongodb+srv://dhiwakarcd22:IVZHaZltOfhYjYoi@cluster0.w8tyx.mongodb.net/bank_feed_back?retryWrites=true&w=majority&appName=Cluster0").then(() => console.log("Database connected successfully")).catch(err => console.error("Database connection failed:", err));  
 
 const table = new mongoose.Schema({
     name: { type: String, required: true },
