@@ -14,7 +14,7 @@ const table = new mongoose.Schema({
 const Feedback = mongoose.model("Feedbacks", table);
 const Create_Feed_back = async (name, email, ph, feed_back_type, feed_back_description, rating) => {
     try {
-        const add_feedback = new Feedback({ name, email, ph, feed_back_type, feed_back_description, rating });
+        const add_feedback = await new Feedback({ name, email, ph, feed_back_type, feed_back_description, rating });
         await add_feedback.save();
         console.log("Feedback saved successfully");
     } catch (err) {
